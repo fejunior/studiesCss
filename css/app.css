@@ -1,0 +1,119 @@
+* {
+  font-family: "fira Code";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*Preserva o tamanho do objeto*/
+}
+.blackMode {
+  color: #e8eef3;
+  background-image: linear-gradient(180deg, #1f1f1f 20%, #002d52 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.mainTitle {
+  font-weight: bolder;
+  font-size: 5em;
+  text-align: center;
+}
+
+.shape {
+  display: flex;
+  flex-wrap: wrap;
+}
+div {
+  background: #035497;
+  margin: 10px;
+}
+#square {
+  width: 100px;
+  height: 100px;
+}
+#rectangle {
+  width: 200px;
+  height: 100px;
+}
+#circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+#oval {
+  width: 200px;
+  height: 100px;
+  border-radius: 100%;
+}
+#triangleUp {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #054070;
+}
+#triangleDown {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid #064d86;
+}
+#triangleLeft {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-right: 100px solid #054070;
+}
+#triangleRight {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 100px solid #054070;
+}
+#triangleTopLeft {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border-top: 100px solid #054070;
+  border-right: 100px solid transparent;
+}
+#triangleTopRight {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border-top: 100px solid #054070;
+  border-left: 100px solid transparent;
+}
+#triangleBottomLeft {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border-bottom: 100px solid #054070;
+  border-right: 100px solid transparent;
+}
+#triangleBottomRight {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border-bottom: 100px solid #054070;
+  border-left: 100px solid transparent;
+}
+#balao {
+  width: 120px;
+  height: 80px;
+  background: red;
+  position: relative;
+  border-radius: 10px;
+}
+#balao:before {
+  position: absolute;
+  width: 100px;
+  height: 0;
+  right: 100%;
+  top: 26px;
+}
